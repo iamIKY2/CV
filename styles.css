@@ -1,0 +1,121 @@
+body {
+    font-family: Verdana, sans-serif; 
+    margin: 0;
+    padding: 0; 
+    background-color: #f4f4f4; 
+}
+
+.container {
+    width: 60%; 
+    margin: 50px auto; 
+    background: rgba(255, 255, 255, 0.644);
+    padding: 20px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+    display: flex; 
+}
+
+/* Cột bên trái  */
+.left-column {
+    width: 40%; 
+    background-color: #333; 
+    color: white; 
+    padding: 20px; 
+    border-radius: 10px 10px 10px 10px; 
+    text-align: center; 
+}
+
+.left-column img {
+    width: 250px;
+    height: 250px; 
+    border-radius: 50%; 
+    margin-bottom: 25px; 
+}
+
+/* Cột bên phải chứa nội dung chính */
+.right-column {
+    width: 60%; 
+    padding: 20px; 
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.info, .contact {
+    text-align: center; 
+}
+
+/* Phần nội dung (section) */
+.section {
+    margin-top: 20px; 
+}
+
+.section h2 {
+    border-bottom: 2px solid #333; /* tạo đường kẻ giống hr */
+    padding-bottom: 5px; 
+}
+
+a {
+    color: rgb(243, 243, 243); 
+    text-decoration: none; /* Loại bỏ gạch chân  */
+}
+
+/* Nếu đã vào web sẵn thì đổi màu*/
+a:hover {
+    color: rgb(6, 255, 255); 
+}
+
+hr{
+    width: 80%; 
+    height: 2px; 
+    background-color: #ffffff; 
+    border: none; /* Loại bỏ viền mặc định của hr */
+    margin: 20px auto; 
+}
+
+/* Thanh kỹ năng */
+progress {
+    border-radius: 100px; 
+    width: 100%; /* Chiều rộng đầy đủ ô chứa */
+    height: 10px; /* Chiều cao thanh 10px */
+}
+
+/* Màu phần hoàn thành của thanh  */
+progress::-webkit-progress-value {
+    background-color: #ff8001; /* Màu cam */
+    border-radius: 100px; 
+}
+
+/* Màu nền của thanh*/
+progress::-webkit-progress-bar {
+    background-color: #ffffff; /* Màu chưa đầy thanh */
+    border-radius: 100px; 
+}
+
+/* Sử dụng grib để chia cột*/
+.skills-grid {
+    display: grid; /* Sử dụng grid để sắp xếp */
+    grid-template-columns: 1fr; /* Một cột duy nhất */
+    gap: 12px; /* Khoảng cách giữa các ô */
+    text-align: left; /* Căn trái nội dung */
+    padding: 20px 0; /* Khoảng đệm trên  */
+}
+
+.skill-group {
+    display: inline-block; /* Hiển thị trên cùng một dòng */
+    vertical-align: top; /* Căn đỉnh */
+    margin-right: 30px; /* Khoảng cách bên phải  */
+}
+
+/* Danh sách trong nhóm kỹ năng */
+.skill-group ul {
+    list-style-type: none; /* Loại bỏ dấu đầu dòng mặc định */
+    padding: 0;
+}
+
+/* Các mục trong danh sách */
+.skill-group li {
+    margin-bottom: 5px; /* Khoảng cách giữa các mục  */
+}
+

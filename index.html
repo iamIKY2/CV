@@ -101,6 +101,8 @@
             </div>
             
         </div>
+            <button id="scrollTopBtn" title="Lên đầu trang"><i class="fa fa-arrow-up"></i></button>
+
     </div>
     <script>
         function runProgressBar(id, targetValue) {
@@ -121,6 +123,21 @@
             runProgressBar('progress-python', 40);
             runProgressBar('progress-bash', 20);
         };
+              // Download CV Button
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            window.print();
+        });
+          const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopBtn.style.display = 'block';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        };
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     </script>
 </body>
 </html>
